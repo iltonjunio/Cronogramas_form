@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pagina.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 void main() {
@@ -14,10 +15,11 @@ class MyApp extends StatelessWidget {
       title: 'Cadastro de Aulas',
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      home: const MyHomePage(title: 'Cadastro de Aulas'),
+      home: const Pagina(),
     );
   }
 }
+
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -138,6 +140,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     },
                     child: const Text('Cadastrar'),
                   ),
+
                 ],
               ),
             ),
