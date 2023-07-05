@@ -8,7 +8,7 @@ class Pagina extends StatefulWidget {
 }
 
 class _PaginaState extends State<Pagina> {
-final List<String> _list = ["Aula 1', Aula 2', Aula 3 ', aula 4"];
+  final List<String> _list = ['Aula 1', ' Aula 2', ' Aula 3 '];
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +19,16 @@ final List<String> _list = ["Aula 1', Aula 2', Aula 3 ', aula 4"];
       body: Container(
         padding: const EdgeInsets.all(16),
         child: Center(
-          child: SingleChildScrollView(
-            child: ListView(),
-          ),
+          child: ListView.builder(
+              padding: const EdgeInsets.all(8),
+              itemCount: _list.length,
+              itemBuilder: (BuildContext context, int index) {
+                return Container(
+                  height: 50,
+                  color: Colors.indigoAccent,
+                  child: Center(child: Text(' ${_list[index]}')),
+                );
+              }),
         ),
       ),
     );
