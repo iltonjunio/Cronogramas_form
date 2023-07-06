@@ -113,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           gravity: ToastGravity.CENTER_LEFT,
                           backgroundColor: Colors.blue,
                         );
-                      }
+                      } Navigator.pushNamed(context, '/perfil');
                     },
                     child: const Text('Cadastrar'),
                   ),
