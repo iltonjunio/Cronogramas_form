@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/cadastro.dart';
 import 'package:flutter_application_1/loguin.dart';
